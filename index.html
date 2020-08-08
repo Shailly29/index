@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link href='https://fonts.googleapis.com/css?family=Euphoria Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .classmain {
+           margin:0px;
+           padding:0px;
+        }
+
+
+        /*Section-1*/
+
+
+        .Nav_bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .domain_name h1 {
+            font-family: 'Euphoria Script';
+            font-size: 50px;
+            color: black;
+        }
+
+        .domain_name p {
+            text-align: center;
+
+        }
+
+        body {
+            color:black;
+            font-family: 'Open Sans';
+            letter-spacing: 2px;
+            width: 100%
+        }
+
+        .menu_items {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 1em;
+            flex-wrap: wrap;
+
+
+        }
+
+        .menu_items li {
+            margin-top: 15px;
+            margin-left: 30px;
+            font-size: larger;
+
+        }
+
+        .menu_items li:hover {
+            background-color: black;
+            opacity: 0.5;
+            color: white;
+        }
+
+        .background_img {
+            background-image: url("bed.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+
+        /*Section 2*/
+        .Sec2-background {
+            background-color: white;
+
+
+        }
+
+        .section-2 {
+            display: flex;
+            justify-content: space-evenly;
+
+
+
+        }
+
+        @media (max-width:1176px) {
+            .section-2 {
+                flex-wrap: wrap;
+
+            }
+        }
+
+        @media (max-width: 736px) {
+            .Nav-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description {
+                flex-wrap: wrap;
+            }
+
+            .section-2 {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 566px) {
+            .section-2 {
+                width: 80%;
+                text-align: justify;
+                padding-left: 4em;
+                flex:wrap;
+            }
+
+            #sec2-img img {
+                width: 80%;
+                height: 80%;
+                padding-left: 3em;
+
+            }
+
+        }
+
+        @media (max-width: 525px) {
+            
+            .sec2-con2-02 {
+                font-size: 80%;
+            }
+
+            #sec2-content1 {
+                font-size: 70%;
+                
+            }
+
+            #sec2-img img {
+                padding-left: 1.5em;
+            }
+
+            .fdisplay {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .fcontent-1 {
+                font-size: 70%;
+            }
+
+            #card-container {
+                flex-direction: column;
+            }
+
+        }   
+         @media (max-width: 466px) {
+                .Nav_bar {
+                    flex-direction: column;
+                    
+
+                }
+
+                .domain_name p {
+                    font-size: 70%;
+                    text-align: center;
+
+                }
+
+                .domain_name h1 {
+                    text-align: center;
+
+
+                }
+
+                .menu_items {
+                    flex-direction: column;
+
+                }
+
+                .menu_items li {
+                    font-size: 60%;
+                    align-items: center;
+                    text-align: center;
+                }
+
+
+        }
+        @media (max-width: 376px){
+            #sec2-img {
+                padding:0px;
+            }
+            .section-2{
+                padding-left: 2em;
+            }
+            #sec2-content1{
+                padding:none;
+                
+
+                margin:none;
+            }
+            .fcontent-2{
+                margin: none;
+                width:none;
+                padding:none;
+            }
+            .fcontent-1{
+                padding:none;
+            }
+            .img-link{
+                padding:none;
+            }
+
+            
+        }
+
+        #sec2-img {
+            padding: 32px;
+
+
+
+        }
+
+
+
+        #sec2-content1 {
+            display: flex;
+            flex-direction: column;
+            padding:32px;
+
+            margin: auto;
+
+
+
+        }
+
+
+        #sec2-content1 h1 {
+            font-size: 4em;
+            font-weight: lighter;
+
+
+
+
+        }
+
+        #sec2-content1 p {
+            font-size: 1.5em;
+
+
+
+        }
+
+        /**/
+        #sec2-content2 {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .sec2-con2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+
+        }
+
+
+
+        .sec2-con2-02 {
+
+
+            margin: 2em;
+            padding: 2em;
+
+
+        }
+
+        .sec2-con2-02 h1 {
+            font-weight: lighter;
+        }
+
+
+
+        /*Section 3 : cards*/
+        .sec-3{
+            
+        }
+
+        #section-3 h1 {
+            text-align: center;
+            margin:0 auto;
+        }
+
+        #card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-left:20px;
+            align-items: center;
+
+        }
+
+        .cards {
+            margin: 15px;
+            outline: none;
+            padding: 10px;
+            display:flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            
+
+        }
+
+        .cards:hover {
+            background-color: black;
+            opacity: 0.7;
+
+        }
+
+
+
+
+        /*About me*/
+
+        .about-bg {
+            background-color: whitesmoke;
+        }
+
+        .about-me {
+            padding: 32px;
+
+
+        }
+
+        .about-me h1 {
+            text-align: center;
+
+        }
+
+        .description {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+    
+
+
+        
+
+        .mypic h1 {
+            color: black;
+            font-size: 1em;
+            margin-left: 3em;
+        }
+
+        .mypic img {
+            border-radius: 50%;
+
+        }
+
+        .des {
+            box-sizing: border-box;
+            padding: 5em;
+
+        }
+
+        /*form*/
+        .form-section-bg {
+            background-color: burlywood;
+            opacity: 0.8;
+        }
+
+        .fdisplay {
+            display: flex;
+            justify-content: space-around;
+            box-sizing: border-box;
+
+        }
+
+        .fcontent-1 {
+            width: 70%;
+            padding: 5em;
+        }
+
+        .fcontent-1 h1 {
+            font-size: 3em;
+            font-weight: lighter;
+        }
+
+        .fcontent-1 p {
+            font-size: 1.5em;
+        }
+
+        .fcontent-2 {
+            width: 30%;
+            padding: 2em;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: dimgray;
+            color: white;
+            padding: 0.5em;
+
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        /*connect*/
+        .cbg {
+
+            background-color: whitesmoke;
+
+        }
+
+        .connect {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+
+
+        }
+
+        .chead {
+            margin: 0 auto;
+            padding: 2em;
+
+        }
+
+        .img-link {
+            margin: 0 auto;
+            padding: 0.5em;
+
+        }
+
+        .img-link img {
+            margin-left: 1em;
+            padding: 1em
+        }
+
+        .img-link img:hover {
+            background-color: black;
+            opacity: 0.5;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="classmain">
+        <!--Section 1-->
+        <div class="background_img">
+            <div class="Nav_bar">
+                <div class="domain_name">
+                    <h1>Nikku's birthday</h1><br>
+                    <p>LUCKY TO HAVE YOU</p><br>
+                    <p>❤️I LOVE YOU❤️</p>
+
+                </div>
+
+                <div class="menu_items">
+                    <li class="menu_items li">Happiest😃 </li>
+                    <li class="menu_items li">Birthday😃</li>
+                    <li class="menu_items li">pure_soul😃</li>
+
+                </div>
+            </div>
+        </div>
+        <!--Section 2-->
+        <div class="Sec2-background">
+            <div class="section-2">
+                <div class="section-2" id="sec2-content1">
+                    <h1>Let's capture the moment's together</h1><br><br>
+                    <p>Laughter, giggles,love, snuggles and even the occasional tear. It's about capturing genuine moments
+                        that makes it so unique and ourselves happy.,and when it comes to our squad or family it seems to be special.I want you to recall those moments on your special day in which you are happy.</p>
+                </div>
+                <div class="section-2" id="sec2-img">
+                    <img src="ns.jpeg">
+
+                </div>
+                <div class="section-2" id="sec2-content2">
+                    <div class="sec2-con2">
+                        <div class="sec2-con2-02">
+                            <h1>So,You’re my definition of perfect okay!!</h1><br>
+                            <p>Have I told you how much I appreciate you? I know I may not show it but
+                                 I thank God for bringing you into my life, Meeting you was the best day of my life. 
+                                 When you are next to me, or when we are apart, You are always the first in my thoughts and in my heart. 
+                                 I never ever thought I'd like you this much and I never planned to have you on my mind this often.
+                                  I love the way you love me,and yes I love you!!</p>
+                        </div>
+                        <div class="sec2-con2-02">
+                            <h1>Okay,Now here we go for the short trip to your happiness!!</h1><br>
+                            <p>A selection of our favorites that gave us all the feels.You know Friendship is a celebration of your similarities and
+                                 differences to others, and loving them for the ways your minds meet and the way they are astoundingly different.And i absolutely know what Friendship means to you!!
+                                so,here is the small trip to ur happy clicks!!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Section 3 : cards-->
+
+
+        <div class="sec-3">
+            <div id="section-3">
+                <h1>Gallery</h1>
+                <div id="card-container">
+                    <div class="cards">
+                        <img src="1.jpeg" width=200px height=300px>
+                    </div>
+                    <div class="cards">
+                        <img src="2.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="3.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="4.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="5.jpeg" width=200px height=300px>
+                    </div>
+                    <div class="cards">
+                        <img src="6.jpg" width=250px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="7.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="8.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="9.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="10.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="11.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="12.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="13.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="14.jpg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="15.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="16.jpeg" width=250px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="17.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="18.jpg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="19.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="20.jpg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="21.jpg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="22.jpeg" width=200px height=250px>
+                    </div>
+    
+                    <div class="cards">
+                        <img src="23.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="24.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="25.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="26.jpeg" width=250px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="27.jpeg" width=200px height=250px>
+                    </div>
+                    <div class="cards">
+                        <img src="28.jpeg" width=200px height=250px>
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+        <!--About me-->
+
+        <div class="about-bg">
+            <div class="about-you">
+                <h1>For you❤️</h1>
+
+            </div>
+
+            <div class="description">
+                <div class="mypic">
+                    <img src="n.jpeg" style="width:200px">
+                    <h1></h1>
+
+
+                </div>
+                <div class="des">
+                    <p>Hola!! Firstly ❤️Happiest Birthday to You❤️, And thank you to scroll out this 
+                        memories..Since clicking enlightning random photos is one of the best thing we all do, and here
+                         i tried my best to have some good collection
+                        of
+                        pics, that reminds uh about the happy memories of your journey, on your special day, Sending from afar, the loveliest of birthday wishes to the loveliest person today!
+                        
+                    </p><br>
+                    <p>There may be many miles between us,
+                        but that doesn’t matter. You’re always in
+                        my heart and whenever we are able to
+                        spend time together I just cherish it that
+                        much more.
+                        
+                        You are so very important to me, and I
+                        hope that you are still able to have an
+                        amazing birthday, even without your
+                        favourite person there beside you!</p><br>
+                    <p>I am addicted to putting authentic moments that illustrate the life that we are living right
+                        now. I
+                        truly believe that these crazy, busy, sleep-deprived years are going to be the ones that we all look
+                        back
+                        on as some of the best years of our's life. I want to capture beautiful moments now, because the
+                        days
+                        are long but the years... they go by so fast.
+                    </p><br>
+                    <p>
+                        That's why it means so much to me to document such moments.<br>
+                        Let's capture the story together!
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--form-->
+
+        <div class="form-section-bg">
+            <div class="fdisplay">
+                <div class="fcontent-1">
+                    <h1>Guys write down some sweet msgs for him❤️!!</h1><br>
+                    <p>He directly get your msgs and wishes!! </p>
+                    <p></p>
+
+                </div>
+
+                <div class="fcontent-2">
+                    <form>
+
+                        <label>Name</label><br>
+                        <input type="text"><br><br>
+
+                        <label>message</label><br>
+                        <input type="text"><br><br>
+
+                        
+
+                        <button class="btn">send</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!--connect-->
+        <div class="cbg">
+            <div class="connect">
+                <div class="chead">
+                    <h1>Happy Bday love</h1>
+                </div>
+                <div class="img-link">
+                    <img src="hbdd.jpg" width=48px height=48px>
+                    <img src="smile.png" width=48px height=48px>
+                    <img src="my.jpg" width=48px height=48px>
+
+
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
